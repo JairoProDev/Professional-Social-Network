@@ -1,0 +1,27 @@
+body {
+    background-color: lightslategray;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile {
+    width: 25%;
+  }
+  
+  .feed {
+    width: 50%;
+  }
+  
+  .contacts {
+    width: 25%;
+  }
+  
