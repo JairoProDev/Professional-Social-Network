@@ -1,48 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Red Social</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro-Dev Social Network for Productivity</title>
+  <!-- ICONSCOUT CDN: https://iconscout.com/unicons/explore/line -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- STYLEHEET -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Perfil</a>
-          <a href="#">Contactos</a>
-        </nav>
-      </header>
-      <section class="profile">
-        <h1>Nombre de Usuario</h1>
-        <img src="profile-picture.jpg" alt="Foto de perfil">
-        <p>Información de perfil</p>
-        <p>Educación</p>
-        <p>Experiencia laboral</p>
-      </section>
-      <section class="feed">
-        <h1>Actividad reciente</h1>
-        <div class="post">
-          <img src="post-image.jpg" alt="Imagen del post">
-          <p>Contenido del post</p>
+  <nav>
+    <div class="container">
+      <h2 class="logo">
+        Pro-Dev-Net
+      </h2>
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Busca contenido que te interese">
+      </div>
+      <div class="create">
+        <label class="btn btn-primary" for="create-post">Crear</label>
+        <div class="profile-photo">
+          <img src="./images/profile-1.jpg" alt="tú foto de perfil">
         </div>
-        <div class="post">
-          <img src="post-image.jpg" alt="Imagen del post">
-          <p>Contenido del post</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================MAIN SECTION============= -->
+  <main>
+    <div class="container">
+      <!-- =============LEFT============ -->
+      <div class="left">
+        <a class="profile">
+          <div class="profile-photo">
+            <img src="./images/profile-1.jpg" alt="">
+          </div>
+          <div class="handle">
+            <h4>Jhayro Sasaqui</h4>
+            <p class="text-muted">
+              @JairoProDev
+            </p>
+          </div>
+        </a>
+
+        <!-- ------------------SIDEBAR-------------- -->
+        <div class="sidebar">
+          <a class="menu-item active">
+            <span><i class="uil uil-estate"></i></span><h3>Home</h3>
+          </a>
+          <a class="menu-item" id="notifications">
+            <span><i class="uil uil-bell"><small class="notificanios-count">9+</small></i></span><h3>Notifications</h3>
+            <!-- -----------------NOTIFICATION POPUP-------------- -->
+            <div class="notifications-popup">
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-2.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>Pique Shaki</b> accepted your friend request
+                  <small class="text-muted">2 Hours ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-3.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>Puss bunny</b> accepted your friend request
+                  <small class="text-muted">3 Hours ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-4.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>Bad Boy</b> accepted your friend request
+                  <small class="text-muted">2 Hours ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-5.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>BZRP</b> accepted your friend request
+                  <small class="text-muted">2 Hours ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-6.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>Cenicienta</b> accepted your friend request
+                  <small class="text-muted">2 Hours ago</small>
+                </div>
+              </div> 
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/profile-7.jpg" alt="">
+                </div>
+                <div class="notifications-body">
+                  <b>Rapunzel</b> accepted your friend request
+                  <small class="text-muted">2 Hours ago</small>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------END NOTIFICATION POPUP------------- -->
+          </a>
+          <a class="menu-item" id="messages-notifications">
+            <span><i class="uil uil-compass"><small class="notification-count"></small>6+</i></span><h3>Explore</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="uil uil-envelope-alt"></i></span><h3>Message</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+          </a>
         </div>
-      </section>
-      <section class="contacts">
-        <h1>Contactos</h1>
-        <div class="contact">
-          <img src="contact-image.jpg" alt="Imagen del contacto">
-          <p>Nombre del contacto</p>
-        </div>
-        <div class="contact">
-          <img src="contact-image.jpg" alt="Imagen del contacto">
-          <p>Nombre del contacto</p>
-        </div>
-      </section>
+        <!-- -------------------------END OF SIDEBAR----------------- -->
+        <label for="create post" class="btn btn-primary">Crear Publicación</label>
+      </div>
+      <!-- ===================MIDDLE================ -->
+      <div class="middle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum dolore repellat facilis rerum at maiores obcaecati nisi corrupti, debitis rem nam, consequuntur, itaque sequi laudantium eaque veniam vitae perspiciatis ipsa? Perferendis modi fugit assumenda saepe, dolores quidem, aperiam voluptatum delectus vel neque necessitatibus iusto quos. Illum aut id atque illo dolorem commodi quaerat perspiciatis necessitatibus, aperiam in inventore sunt iure veritatis iste voluptas eveniet voluptate eos officiis et consequatur? Beatae libero sapiente, corrupti est architecto tenetur consequatur repudiandae repellat magnam qui recusandae expedita cum! Eos quasi atque nam magnam et velit perferendis! Doloremque eius voluptates odio maiores sint rerum sapiente soluta assumenda veritatis unde. Consectetur sint cupiditate eveniet dolores maxime, culpa suscipit impedit itaque officiis, ex libero, expedita ullam autem illum! Doloribus non laudantium voluptate quia velit sunt explicabo consequatur, rerum alias, nam consequuntur atque magni temporibus nostrum nesciunt porro consectetur! Repellendus voluptas maxime blanditiis dicta facilis. Libero recusandae distinctio ab possimus necessitatibus vero iste, neque perferendis est impedit similique suscipit adipisci, natus quos corrupti. Cumque ullam, dignissimos enim quibusdam rem aliquam nulla nobis vero temporibus ratione laboriosam cum dolor molestias fugit nihil tempore ipsa tenetur consectetur aut illo ea aliquid. Animi, totam! Placeat similique aut atque inventore ipsum?
+      </div>
+      <!-- ===================RIGHT================ -->
+      <div class="right">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim porro est ex suscipit quo rerum ea accusantium eos, voluptate recusandae ut dolor quam esse perferendis vitae ratione, molestias quia. Error ipsa delectus commodi, aspernatur eligendi magni ratione porro quia provident iusto nobis aliquid rerum aliquam accusantium tempore ab unde iste! Numquam unde corporis a inventore? Repudiandae fuga eum labore atque cumque! Modi aliquam voluptates quasi a, temporibus perferendis vero corporis cupiditate? Amet, tempora. Harum dolorum repudiandae, aperiam distinctio tempore vel voluptatum neque adipisci facere eos maiores error obcaecati ex placeat omnis! Suscipit optio magni rerum dolore! Soluta, dignissimos cumque.
+      </div>
+    </div>
+  </main>
 </body>
 </html>
